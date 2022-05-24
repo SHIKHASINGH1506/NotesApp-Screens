@@ -8,6 +8,50 @@
     <title>Notes App</title>
 </head>
 <body>
-    <h1>Home Page</h1>
+    <header class="navbar-home">
+        <nav class="navbar-wrapper d-flex justify-between items-center">
+            <div class="d-flex items-center w-50">
+                <svg
+                    class="sidebar-toggler"
+                    id="sidebar-toggler"
+                    viewBox="0 0 100 40"
+                    width="40"
+                    height="40"
+                >
+                    <rect width="60" height="10"></rect>
+                    <rect y="20" width="60" height="10"></rect>
+                    <rect y="40" width="60" height="10"></rect>
+                </svg>
+                <a class="brand-logo mx-2" href="/">Noter</a>
+            </div>
+            <div class="d-flex">
+                <i class="fa-solid fa-arrow-right-from-bracket"></i>
+            </div>
+            </div>
+        </nav>
+    </header>
+    <div class="landing-wrapper p-4">
+        <div class="landing-content-wrapper d-flex justify-between ">
+          <div class="hero-img-wrapper">
+            <img src='./assets/images/hero-img.svg' alt="" class="responsive-img" />
+          </div>
+          <div class="landing-content d-flex flex-col justify-between">
+            <h1>Noter</h1>
+            <div class="landing-content-body">
+              <h4>Meet your modern <br /><span class="primary-txt">Note Taking App</span></h4>
+              <p>Manage your daily tasks and workflow in a modern way and boost your efficiency without any efforts.</p>
+            </div>
+            <div class="landing-content-footer">
+              <button class="bttn bttn-primary bttn-lg">
+                <a href='./pages/home/home.html'>Start Now</a>
+              </button>
+               <p class="sub-text text-sm">Already have an account? 
+                <a class="text-sm bold link-text-primary" href='/login'>Login</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    <script src="https://kit.fontawesome.com/49a5836cde.js" crossorigin="anonymous"></script>
 </body>
 </html>
