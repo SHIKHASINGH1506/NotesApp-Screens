@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../styles/styles.css">
+    <title>Notes App | Trash</title>
+</head>
+
+<body>
+    <header class="navbar-home">
+        <nav class="navbar-wrapper d-flex justify-between items-center">
+            <div class="d-flex items-center w-50">
+                <svg class="sidebar-toggler" id="sidebar-toggler" viewBox="0 0 100 40" width="40" height="40">
+                    <rect width="60" height="10"></rect>
+                    <rect y="20" width="60" height="10"></rect>
+                    <rect y="40" width="60" height="10"></rect>
+                </svg>
+                <a class="brand-logo mx-2" href="../../index.html">Noter</a>
+            </div>
+            <div class="d-flex">
+                <i class="fa-solid fa-arrow-right-from-bracket"></i>
+            </div>
+            </div>
+        </nav>
+    </header>
+    <div class="wrapper">
+        <div class="container d-flex">
+            <aside class="side-navbar d-flex flex-col">
+                <section class="drawer-menu">
+                    <ul class="nav-lists d-flex flex-col">
+                        <li class="nav-item d-flex items-center py-2 px-2">
+                            <a href="../home/home.html" class="d-flex items-center active">
+                                <i class="fa-solid fa-house mr-2 icon"></i>
+                                Home
+                            </a>
+                        </li>
+                        <li class="nav-item d-flex flex-col py-2 px-2">
+                            <a href="../labels/labels.html" class="d-flex items-center">
+                                <i class="fa-solid fa-tags mr-2 icon"></i>
+                                Labels
+                            </a>
+                        </li>
+                        <li class="nav-item d-flex items-center py-2 px-2">
+                            <a href="../archive/archive.html" class="d-flex items-center">
+                                <i class="fa-solid fa-box-archive mr-2 icon"></i>
+                                Archive
+                            </a>
+                        </li>
+                        <li class="nav-item d-flex items-center py-2 px-2">
+                            <a href="#" class="d-flex items-center">
+                                <i class="fa-solid fa-trash mr-2 icon"></i>
+                                Trash
+                            </a>
+                        </li>
+                        <li class="nav-item d-flex items-center py-2 px-2">
+                            <a href="" class="d-flex items-center">
+                                <i class="fa-solid fa-user mr-2 icon"></i>
+                                Profile
+                            </a>
+                        </li>
+                    </ul>
+                    <section class="py-2">
+                        <LabelInput label="{label}" addLabelHandler="{addLabel}" setlabelField="{setLableField}" />
+                    </section>
+                    <button class="bttn bttn-primary w-full my-2">
+                        Create New Note
+                    </button>
+                </section>
+            </aside>
+
+            <div class="d-flex justify-center center-body">
+                <div class="drawer-app-content">
+                    <header class="drawer-top-bar">
+                        <div class="search-bar d-flex items-center">
+                            <button class="search-bar__btn" type="submit">
+                                <i class="fas fa-search"></i>
+                            </button>
+                            <input class="search-bar-input" type="text" id="product" placeholder="search here..." />
+                    </header>
+                    <main class="home-page-body">
+                        <div class="card-container" id="addPortal">
+                        </div>
+
+                        <p class='bold'>Notes you delete go here</p>
+                    </main>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/49a5836cde.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
