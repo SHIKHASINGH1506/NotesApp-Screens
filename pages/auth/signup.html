@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../styles/styles.css">
+    <title>Notes App | Login</title>
+</head>
+
+<body>
+    <header class="navbar-home">
+        <nav class="navbar-wrapper d-flex justify-between items-center">
+          <div class="d-flex items-center w-50">
+            <svg class="sidebar-toggler" id="sidebar-toggler" viewBox="0 0 100 40" width="40" height="40">
+              <rect width="60" height="10"></rect>
+              <rect y="20" width="60" height="10"></rect>
+              <rect y="40" width="60" height="10"></rect>
+            </svg>
+            <a class="brand-logo mx-2" href="../../index.html">Noter</a>
+          </div>
+          <div class="d-flex">
+            <i class="fa-solid fa-arrow-right-from-bracket"></i>
+          </div>
+          </div>
+        </nav>
+      </header>
+    <div class="login-wrapper">
+        <div class="login-modal">
+            <form class="login-form">
+                <h3 class="login-title">Sign up</h3>
+                <p class="login-subtitle text-center">Enter email and password</p>
+                <div class="input-container">
+                  <label class="input-label" htmlFor="fullName">Full Name</label>
+                  <input
+                    class="input-section"
+                    type="text"
+                    id="fullName"
+                    name="fullName"
+                  />
+                </div>
+                <div class="input-container">
+                  <label class="input-label" htmlFor="email">Email</label>
+                  <input
+                    class="input-section"
+                    type="text"
+                    id="email"
+                    name="email"
+                   
+                  />
+                </div>
+                <div class="input-container">
+                  <label class="input-label" htmlFor="pwd">Password</label>
+                  <input
+                    class="input-section"
+                    type="password"
+                    id="pwd"
+                    name="password"
+                    required
+                  />
+                </div>
+                <div class="input-container">
+                  <label class="input-label" htmlFor="confirm-pwd">Confirm Password</label>
+                  <input
+                    class="input-section"
+                    type="password"
+                    name="confirmPassword"
+                    placeholder="Confirm Password"
+                    required
+                  />
+                </div>
+                <label class="input-label text-sm" htmlFor="pwd-store">
+                  <input type="checkbox" name="" id="pwd-store" />
+                  I accept all the terms and conditions
+                </label>
+      
+                <button class="bttn bttn-primary bttn-block">CREATE ACCOUNT</button>
+                <p class="sub-text text-sm text-center">Already have an account?
+                  <a class="text-sm bold link-text-primary" href='./login.html'>Login</a>
+                </p>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
